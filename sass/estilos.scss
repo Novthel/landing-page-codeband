@@ -1,0 +1,217 @@
+@use "components";
+
+@mixin display-base() {
+    width: 100%;
+    padding: 3rem;
+    margin: auto;
+    max-width: 992px;
+}
+
+@mixin intro-section(){
+    text-align: center;
+    h3 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 0.8rem;
+        color: #888;
+    }
+}
+
+html {
+    min-width: 100vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 1px solid #dddddd;
+    width: 100%;
+    
+    .logo {
+        a{
+            img{
+                max-width: 6rem;
+            }
+        }  
+    }
+
+}
+
+.sec-home {
+    display: flex;
+    align-items: center;
+    @include display-base();
+    
+    .home-info {
+        flex: auto;
+        .info-text {
+            color: components.$color-main;
+        }
+        .home-title {
+            width: 20rem;
+            font-size: 3rem;
+        }
+
+        .home-desc {
+            width: 19rem;
+        }
+
+        .email {
+            .input-col {
+                max-width: 12rem;
+            }
+        }
+    }
+}
+
+.sec-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include display-base();
+
+    .intro {
+        @include intro-section();
+    }
+
+    .intro-info {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      
+        .intro-info-feature {
+            padding: 2rem 0;
+            flex: 1;
+            .feature {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                .text-feature{
+                    max-width: 20rem;
+                    h4 {
+                        font-size: 1.15rem;
+                    }
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+           
+        }
+        .intro-img {
+            img {
+                max-width: 20rem;
+            }
+        }
+    }
+}
+
+.sec-benefits {
+    border-top: 1px solid #ddd;
+    .intro {
+        margin: 3rem;
+        @include intro-section();
+    }
+    .card-benefits {
+        padding: 0 2rem 2rem 2rem;
+        width: 100%;
+    }
+    
+}
+
+.sec-kpis {
+    background-color: components.$color-main;
+    width: 100%;
+    padding: 4rem;
+    color: white;
+
+    .kpis-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .kpis-number {
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+    
+        .kpis-string {
+            font-size: 0.9rem; 
+            color: rgba(255, 255, 255, 0.678);
+        }
+    }  
+}
+
+.sec-onboarding {
+    .intro {
+        margin: 3rem;
+        @include intro-section();
+    }
+
+    .card-onboarding {
+        padding: 0 7rem 5rem 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .separate {
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 1rem;
+        }
+    }
+}
+
+.sec-footer {
+    padding: 5rem;
+    background-color: #f5f8ff;
+    background-image: url(../assets/img/bg.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+
+    .footer-cta {
+        width: 50%;
+        h4 {
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.1rem; 
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .sec-onboarding {
+
+        .card-onboarding {
+            flex-direction: column;
+            .step-onboarding{
+                .title-card {
+                    text-align: center;
+                }
+            
+            }
+        }
+    }
+
+    .sec-footer {
+
+        background-image: none;
+       
+        .footer-cta {
+            width: 100%;
+           text-align: center;
+        }
+    }
+
+}
+    

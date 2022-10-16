@@ -1,0 +1,117 @@
+$color-main: #0075ff;
+
+@mixin btn-base() {
+    background-color: $color-main;
+    border: 1px solid $color-main;
+    color: white;
+    border-radius: 0.3rem;
+
+    &:hover {
+        background-color: white;
+        color: $color-main;
+    }
+}
+
+.btn-get {
+    @include btn-base();
+    padding: 0.4rem 1.5rem;
+    font-size: 1rem;
+
+    &-s {
+        @include btn-base();
+        padding: 0.2rem 1.5rem;
+        font-size: 0.7rem;
+    } 
+}
+
+.btn-singin {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    padding: 0.2rem 1.5rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+
+    &:hover {
+        color: rgb(100, 98, 98);
+    }
+}
+
+.icon-sm{
+    i {
+        padding: 0.5rem 0.7rem;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+        color: $color-main;
+        margin: 1rem;
+    }
+}
+
+.menu {
+    margin-bottom: 0;
+    li{
+        display: inline;
+        list-style: none;
+        font-size: 0.8rem;
+        margin-right: 1rem;
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+
+
+.cards {
+    
+    width: 100%;
+    padding: 0 2rem 2rem 2rem;
+    .icon-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            color: $color-main;
+            font-size: 7.5rem;
+        }
+    }
+    .title-card {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .text-card {
+        color: #888;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .footer-card {
+        color: $color-main;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+.step-onboarding{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .icon-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            color: $color-main;
+            font-size: 9rem;
+        }
+    }
+    .title-card {
+        margin-top: -1.7rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+}

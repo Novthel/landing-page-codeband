@@ -1,0 +1,297 @@
+.btn-get {
+  background-color: #0075ff;
+  border: 1px solid #0075ff;
+  color: white;
+  border-radius: 0.3rem;
+  padding: 0.4rem 1.5rem;
+  font-size: 1rem;
+}
+.btn-get:hover {
+  background-color: white;
+  color: #0075ff;
+}
+.btn-get-s {
+  background-color: #0075ff;
+  border: 1px solid #0075ff;
+  color: white;
+  border-radius: 0.3rem;
+  padding: 0.2rem 1.5rem;
+  font-size: 0.7rem;
+}
+.btn-get-s:hover {
+  background-color: white;
+  color: #0075ff;
+}
+
+.btn-singin {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  padding: 0.2rem 1.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.btn-singin:hover {
+  color: rgb(100, 98, 98);
+}
+
+.icon-sm i {
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+  color: #0075ff;
+  margin: 1rem;
+}
+
+.menu {
+  margin-bottom: 0;
+}
+.menu li {
+  display: inline;
+  list-style: none;
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+.menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.cards {
+  width: 100%;
+  padding: 0 2rem 2rem 2rem;
+}
+.cards .icon-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards .icon-card i {
+  color: #0075ff;
+  font-size: 7.5rem;
+}
+.cards .title-card {
+  font-size: 2rem;
+  text-align: center;
+}
+.cards .text-card {
+  color: #888;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.cards .footer-card {
+  color: #0075ff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.step-onboarding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.step-onboarding .icon-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step-onboarding .icon-card i {
+  color: #0075ff;
+  font-size: 9rem;
+}
+.step-onboarding .title-card {
+  margin-top: -1.7rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+html {
+  min-width: 100vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+}
+.nav .logo a img {
+  max-width: 6rem;
+}
+
+.sec-home {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 3rem;
+  margin: auto;
+  max-width: 992px;
+}
+.sec-home .home-info {
+  flex: auto;
+}
+.sec-home .home-info .info-text {
+  color: #0075ff;
+}
+.sec-home .home-info .home-title {
+  width: 20rem;
+  font-size: 3rem;
+}
+.sec-home .home-info .home-desc {
+  width: 19rem;
+}
+.sec-home .home-info .email .input-col {
+  max-width: 12rem;
+}
+
+.sec-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem;
+  margin: auto;
+  max-width: 992px;
+}
+.sec-features .intro {
+  text-align: center;
+}
+.sec-features .intro h3 {
+  font-size: 1.8rem;
+}
+.sec-features .intro p {
+  font-size: 0.8rem;
+  color: #888;
+}
+.sec-features .intro-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.sec-features .intro-info .intro-info-feature {
+  padding: 2rem 0;
+  flex: 1;
+}
+.sec-features .intro-info .intro-info-feature .feature {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.sec-features .intro-info .intro-info-feature .feature .text-feature {
+  max-width: 20rem;
+}
+.sec-features .intro-info .intro-info-feature .feature .text-feature h4 {
+  font-size: 1.15rem;
+}
+.sec-features .intro-info .intro-info-feature .feature .text-feature p {
+  font-size: 1rem;
+}
+.sec-features .intro-info .intro-img img {
+  max-width: 20rem;
+}
+
+.sec-benefits {
+  border-top: 1px solid #ddd;
+}
+.sec-benefits .intro {
+  margin: 3rem;
+  text-align: center;
+}
+.sec-benefits .intro h3 {
+  font-size: 1.8rem;
+}
+.sec-benefits .intro p {
+  font-size: 0.8rem;
+  color: #888;
+}
+.sec-benefits .card-benefits {
+  padding: 0 2rem 2rem 2rem;
+  width: 100%;
+}
+
+.sec-kpis {
+  background-color: #0075ff;
+  width: 100%;
+  padding: 4rem;
+  color: white;
+}
+.sec-kpis .kpis-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-kpis .kpis-info .kpis-number {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.sec-kpis .kpis-info .kpis-string {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.678);
+}
+
+.sec-onboarding .intro {
+  margin: 3rem;
+  text-align: center;
+}
+.sec-onboarding .intro h3 {
+  font-size: 1.8rem;
+}
+.sec-onboarding .intro p {
+  font-size: 0.8rem;
+  color: #888;
+}
+.sec-onboarding .card-onboarding {
+  padding: 0 7rem 5rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec-onboarding .card-onboarding .separate {
+  flex: 1;
+  border-top: 2px solid #ddd;
+  margin: 0 1rem;
+}
+
+.sec-footer {
+  padding: 5rem;
+  background-color: #f5f8ff;
+  background-image: url(../assets/img/bg.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+.sec-footer .footer-cta {
+  width: 50%;
+}
+.sec-footer .footer-cta h4 {
+  font-size: 2rem;
+}
+.sec-footer .footer-cta p {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .sec-onboarding .card-onboarding {
+    flex-direction: column;
+  }
+  .sec-onboarding .card-onboarding .step-onboarding .title-card {
+    text-align: center;
+  }
+  .sec-footer {
+    background-image: none;
+  }
+  .sec-footer .footer-cta {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
